@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -216,95 +217,7 @@ export default function Home() {
 
             <div className="grid lg:grid-cols-[1.2fr,1fr] gap-12">
               <div>
-                <form
-                  className="bg-[#F2E9DA] rounded-3xl border border-slate-100 shadow-sm p-6 space-y-4"
-                  action="send-contact.php"
-                  method="POST"
-                >
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">Name</label>
-                      <input
-                        type="text"
-                        name="Name"
-                        className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brandbrown focus:border-brandbrown"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">Company or organization</label>
-                      <input
-                        type="text"
-                        name="Company"
-                        className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brandbrown focus:border-brandbrown"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">Email</label>
-                      <input
-                        type="email"
-                        name="Email"
-                        className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brandbrown focus:border-brandbrown"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">Phone</label>
-                      <input
-                        type="tel"
-                        name="Phone"
-                        className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brandbrown focus:border-brandbrown"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">Project location</label>
-                      <input
-                        type="text"
-                        name="Location"
-                        className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brandbrown focus:border-brandbrown"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">Project type</label>
-                      <select
-                        name="Type"
-                        className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm bg-brandcream focus:outline-none focus:ring-2 focus:ring-brandbrown focus:border-brandbrown"
-                      >
-                        <option value="">Select a type</option>
-                        <option>Residential</option>
-                        <option>Commercial</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-medium text-slate-600 mb-1">Brief description</label>
-                    <textarea
-                      name="Description"
-                      rows={4}
-                      className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brandbrown focus:border-brandbrown"
-                      placeholder="Tell us a little about scope, schedule, and what you need help with."
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full sm:w-auto px-5 py-3 rounded-full text-sm font-semibold bg-brandbrown text-brandcream hover:bg-black shadow-sm transition-colors"
-                  >
-                    Send message
-                  </button>
-
-                  <p className="text-[11px] text-slate-600 mt-2">
-                    Submissions from this form are sent to <span className="font-semibold">info@miqconstruct.com</span>.
-                  </p>
-                </form>
+                <ContactForm />
               </div>
 
               <div className="space-y-4 text-sm text-slate-700">
