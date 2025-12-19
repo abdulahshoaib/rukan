@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio | Rukan Construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F9F4EC">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandcream: "#F9F4EC",
+            brandbrown: "#3D2B1F"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-brandcream text-slate-900">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Header, same style as home -->
+    <header class="sticky top-0 z-30 bg-brandcream/95 backdrop-blur border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-24">
+        <a href="index.html#home" class="flex items-center">
+          <img
+            src="rukan-logo.png"
+            alt="Rukan Construction logo"
+            class="h-16 object-contain"
+          >
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="index.html#home" class="text-slate-700 hover:text-black">Home</a>
+          <a href="index.html#about" class="text-slate-700 hover:text-black">About</a>
+          <a href="index.html#services" class="text-slate-700 hover:text-black">Services</a>
+          <a href="portfolio.html" class="text-slate-900 font-semibold hover:text-black">Portfolio</a>
+          <a href="index.html#contact" class="text-slate-700 hover:text-black">Contact</a>
+          <a href="terms.html" class="text-slate-500 hover:text-[#3D2B1F] text-xs">Terms</a>
+          <a href="privacy.html" class="text-slate-500 hover:text-[#3D2B1F] text-xs">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <p class="text-xs font-semibold tracking-[0.25em] uppercase text-slate-500 mb-2">
+          Portfolio
+        </p>
+        <h1 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900 mb-3">
+          Project portfolio
+        </h1>
+        <p class="text-sm text-slate-700 mb-4 max-w-2xl">
+          This page is being populated. We are adding project photos and job details here. Check back soon for a full list of completed work.
+        </p>
+
+        <!-- Coming soon line, centered and sized like a main heading -->
+        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900 text-center mb-8">
+          Coming soon
+        </h2>
+
+        <div class="rounded-3xl border-2 border-dashed border-slate-300 bg-[#F2E9DA] p-8 text-center">
+          <p class="text-sm text-slate-700 mb-2">
+            Project gallery will appear here.
+          </p>
+          <p class="text-xs text-slate-500">
+            When you are ready to add jobs, you or your web person can insert image blocks and descriptions inside this section.
+          </p>
+        </div>
+
+        <!--
+          FUTURE EDITS
+
+          To add projects later, you can replace the box above with cards like:
+
+          <div class="grid md:grid-cols-3 gap-6 mt-10">
+            <div class="rounded-2xl border border-slate-100 overflow-hidden bg-white">
+              <img src="your-image-1.jpg" class="w-full h-40 object-cover" alt="Project name">
+              <div class="p-4 text-left">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-500 mb-1">Project type</p>
+                <p class="text-sm font-semibold text-slate-900">Project name</p>
+                <p class="text-xs text-slate-600">City, state</p>
+              </div>
+            </div>
+            ...
+          </div>
+        -->
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-brandcream">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-slate-500 text-center md:text-left">
+          Rukan Construction is a DBA of MIQ Construct LLC, a Texas based construction and estimating firm, subsidiary of AIQ Construction LLC,
+          serving residential and commercial clients across the Dallas Fort Worth area and the Houston metroplex since 2017.
+        </p>
+        <div class="flex flex-wrap justify-center md:justify-end gap-4 text-xs text-slate-600">
+          <a href="index.html#home" class="hover:text-black">Home</a>
+          <a href="index.html#about" class="hover:text-black">About</a>
+          <a href="index.html#services" class="hover:text-black">Services</a>
+          <a href="portfolio.html" class="hover:text-black">Portfolio</a>
+          <a href="index.html#contact" class="hover:text-black">Contact</a>
+          <a href="terms.html" class="hover:text-[#3D2B1F]">Terms</a>
+          <a href="privacy.html" class="hover:text-[#3D2B1F]">Privacy</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

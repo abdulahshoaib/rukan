@@ -1,0 +1,73 @@
+import Link from 'next/link';
+import Header from '@/components/Header';
+
+export default function Terms() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <header className="border-b border-slate-200 bg-brandcream">
+        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+          <Link href="/" className="flex items-center">
+            <div className="h-9 object-contain text-brandbrown font-bold text-lg">
+              RUKAN
+            </div>
+          </Link>
+          <Link href="/" className="text-xs text-slate-600 hover:text-black">
+            Back to site
+          </Link>
+        </div>
+      </header>
+
+      <main className="flex-1">
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4">
+            Terms and Conditions
+          </h1>
+          <p className="text-sm text-slate-700 mb-3">
+            Rukan Construction is an estimating and construction company that provides estimation services and general contracting for residential and commercial projects.
+            By using Rukanconstruction.com and any related services, you agree to these Terms and Conditions.
+          </p>
+          <p className="text-sm text-slate-700 mb-3">
+            The owner of this website is MIQ Construct LLC doing business as Rukan Construction. If you do not agree with these Terms and Conditions,
+            you must not use this website.
+          </p>
+
+          <h2 className="text-lg font-semibold mt-6 mb-2">Use of this site</h2>
+          <p className="text-sm text-slate-700 mb-3">
+            Information on this site is provided for general information only. Nothing on this site is a bid, offer, or construction contract.
+            Any project work will be governed by a separate written agreement between you and MIQ Construct LLC doing business as Rukan Construction.
+          </p>
+
+          <h2 className="text-lg font-semibold mt-6 mb-2">Intellectual property</h2>
+          <p className="text-sm text-slate-700 mb-3">
+            All content on this website, including text, graphics, logos, photos, and layouts, is owned by or licensed to Rukan Construction.
+            You may not reproduce, distribute, or reuse any content without prior written permission.
+          </p>
+
+          <h2 className="text-lg font-semibold mt-6 mb-2">No warranties</h2>
+          <p className="text-sm text-slate-700 mb-3">
+            While we try to keep information on this site current and accurate, the site and its content are provided as is, without any warranties of any kind,
+            express or implied. Rukan Construction does not guarantee that the site will be available at all times or free of errors, viruses, or other harmful components.
+          </p>
+
+          <h2 className="text-lg font-semibold mt-6 mb-2">Limitation of liability</h2>
+          <p className="text-sm text-slate-700 mb-3">
+            Rukan Construction will not be liable for any direct, indirect, incidental, consequential, or special damages arising from or in any way related to
+            your use of this site or your inability to use this site.
+          </p>
+
+          <h2 className="text-lg font-semibold mt-6 mb-2">Governing law</h2>
+          <p className="text-sm text-slate-700 mb-3">
+            These Terms and Conditions are governed by the laws of the State of Texas, without regard to conflict of law rules.
+            Any disputes related to this site will be brought in the state or federal courts located in Dallas County, Texas.
+          </p>
+        </section>
+      </main>
+
+      <footer className="border-t border-slate-200 bg-brandcream">
+        <div className="max-w-4xl mx-auto px-4 py-4 text-xs text-slate-500">
+          © Rukan Construction, a DBA of MIQ Construct LLC.
+        </div>
+      </footer>
+    </div>
+  );
+}
